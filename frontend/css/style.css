@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url("../images/ba3f6015223ac6d947835ef5ae387ffe.jpg");
+    background-image: url("../images/macro-de-uma-folha-tropical-verde.jpg");
     color: #f2f2f2;
 }
 
@@ -30,6 +30,7 @@ body {
     background-color: #212121;
     border-radius: 5px;
     padding: 20px;
+    display: none;
 }
 
 .login > h2 {
@@ -57,7 +58,7 @@ body {
 }
 
 .login__input:focus {
-    outline: 2px solid #f2f2f2;
+    outline: 2px solid #4ad656;
 }
 
 .login__button {
@@ -72,7 +73,54 @@ body {
 }
 
 .login__button:hover {
-    background-color: #fff;
+    background-color: #4ad656;
+    color: #ddd;
 }
 
+.chat {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat__messages {
+   flex-grow: 1;
+}
+
+.chat__form {
+    background-color: hsl(124, 13%, 46%);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.chat__input {
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    background-color: #ddd;
+    outline: none;
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 500;
+}
+ 
+.chat__button {
+    border: none;
+    background: none;
+    color: #4ad656;
+    cursor: pointer;
+}
+
+.chat__button > span {
+    font-size: 1.8rem;
+}
 
